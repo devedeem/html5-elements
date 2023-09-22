@@ -5,3 +5,79 @@ body {
 h1{
     font-size: 14pt;
 }
+pre {
+    padding: 16px;
+    border-radius: 4px;
+    border: 1px solid #d3dce6;
+    background-color: #383b40;
+    margin-bottom: 16px;
+    overflow: auto;
+    font-family: "Droid Sans Mono","Inconsolata","Menlo","Consolas","Bitstream Vera Sans Mono","Courier",monospace;
+    font-size: 14px;
+    line-height: 20px;
+    color: #d5d5d5
+}
+
+/* Code Output Browser */
+.browser {
+    max-width: 100%;
+    min-height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.window-controls {
+    float: left;
+    margin-top: 10px;
+}
+
+.window-controls span {
+    display: inline-block;
+    background-color: #ddd;
+    border: none;
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    border-radius: 50%;
+}
+
+.window-controls .minimize {
+    background-color: #30cd43;
+}
+
+.window-controls .maximize {
+    background-color: #fcc02e;
+}
+
+.window-controls .close {
+    background-color: #fd6257;
+}
+
+.tabs {
+    background-color: #ddd;
+    height: 40px;
+    padding: 5px 5px 0 5px;
+}
+
+.tab {
+    display: inline-block;
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    margin-left: 10px;
+    /* margin-top: 7px; */
+}
+
+.tab.active {
+    background-color: #fff;
+}
+.tab.active span {
+    margin-left: 10px;
+    cursor: pointer;
+}
+.content {
+    height: calc(100% - 40px);
+    background-color: #fff;
+    padding: 20px;
+}
